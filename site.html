@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+ <meta charset="UTF-8">
+ <title>Надійні ігри</title>
+ <style>
+  body {
+   font-family: Arial, sans-serif;
+   background-color: #eef3fb;
+   color: #222;
+   max-width: 900px;
+   margin: 0 auto;
+   padding: 20px;
+  }
+  h1 { color: #1a3c8f; font-size: 40px; }
+  h2 { color: #2b5fd9; }
+  hr { border: 1px solid #b7c7ee; margin: 25px 0; }
+  a { color: #d9382b; font-weight: bold; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  img { border-radius: 10px; margin: 5px; }
+  table { background-color: white; width: 100%; }
+  th { background-color: #2b5fd9; color: white; }
+  tr:hover td { background-color: #dfe8fb; }
+  .author {
+   background-color: white;
+   border-left: 6px solid #2b5fd9;
+   padding: 15px;
+   border-radius: 8px;
+  }
+  .footer { text-align: center; color: #666; font-size: 14px; }
+ </style>
+</head>
+<body>
+
+<h1 align="center">Надійні ігри</h1>
+<p align="center"><i>Безпечний каталог ігор з офіційних сайтів</i></p>
+<hr>
+
+<h2 align="center">Про автора</h2>
+<div class="author">
+ <p>Привіт! Мене звати <b>Михайло</b>, я учень <b>8-В</b> класу.
+ Я <i>дуже люблю</i> грати в ігри ще з початкової школи. Усе почалося,
+ коли мені подарували перший комп'ютер, і я одразу встановив гоночну гру.</p>
+ <p>Одного разу я завантажив гру з незнайомого сайту, і комп'ютер почав
+ страшенно гальмувати. Виявилось, що у файлі був <mark>вірус</mark>.
+ Тоді я вирішив створити свій сайт, де всі ігри беруться тільки з
+ <b>офіційних сайтів</b>, щоб мої друзі не повторили мою помилку.</p>
+ <p>Окрім ігор, я люблю гуляти з друзями та <i>дізнаватися</i> нове про технології.</p>
+</div>
+<hr>
+
+<h2 align="center">Чому цей сайт надійний</h2>
+<p>Тут зібрані <b>безкоштовні ігри</b> з офіційних сайтів. Ми <i>не</i> даємо ліпових
+файлів і зламаних версій, тому <mark>завантажувати їх безпечно</mark>.
+Обирайте гру, <i>дізнавайтесь</i> про неї та грайте з задоволенням.</p>
+<hr>
+
+<h2 align="center">Наш топ ігор</h2>
+<ol>
+ <li>SuperTuxKart — гонки</li>
+ <li>Roblox — пісочниця</li>
+ <li>Luanti (Minetest) — будівництво</li>
+ <li>Fortnite — екшн</li>
+ <li>0 A.D. — стратегія</li>
+</ol>
+<hr>
+
+<h2 align="center">Жанри, які ми любимо</h2>
+<ul>
+ <li>Гонки</li>
+ <li>Пісочниця</li>
+ <li>Стратегії</li>
+ <li>Екшн</li>
+</ul>
+<hr>
+
+<h2 align="center">Зображення ігор</h2>
+<!-- Заміни src на свої картинки (файл у папці або URL) -->
+<img src="supertuxkart.jpg" alt="SuperTuxKart" width="200" height="300">
+<img src="roblox.jpg" alt="Roblox" width="200" height="300">
+<img src="luanti.jpg" alt="Luanti" width="200" height="300">
+<hr>
+
+<h2 align="center">Де завантажити</h2>
+<ul>
+ <li><a href="https://supertuxkart.net/Download" target="_blank">SuperTuxKart</a></li>
+ <li><a href="https://www.roblox.com/download" target="_blank">Roblox</a></li>
+ <li><a href="https://www.luanti.org/downloads/" target="_blank">Luanti</a></li>
+ <li><a href="https://www.fortnite.com/" target="_blank">Fortnite</a></li>
+ <li><a href="https://play0ad.com/" target="_blank">0 A.D.</a></li>
+</ul>
+<hr>
+
+<h2 align="center">Каталог ігор</h2>
+<p>Оберіть жанр:
+ <select id="filter" onchange="filterTable()">
+  <option value="all">Усі</option>
+  <option>Гонки</option>
+  <option>Пісочниця</option>
+  <option>Стратегія</option>
+  <option>Екшн</option>
+ </select>
+</p>
+
+<table id="games" border="1" cellpadding="10" cellspacing="0">
+<tr>
+ <th>Назва гри</th>
+ <th>Жанр</th>
+ <th>Платформа</th>
+ <th>Завантажити</th>
+</tr>
+<tr>
+ <td>SuperTuxKart</td><td>Гонки</td><td>ПК</td>
+ <td><a href="https://supertuxkart.net/Download" target="_blank">Скачати</a></td>
+</tr>
+<tr>
+ <td>Roblox</td><td>Пісочниця</td><td>ПК, телефон</td>
+ <td><a href="https://www.roblox.com/download" target="_blank">Скачати</a></td>
+</tr>
+<tr>
+ <td>Luanti</td><td>Пісочниця</td><td>ПК</td>
+ <td><a href="https://www.luanti.org/downloads/" target="_blank">Скачати</a></td>
+</tr>
+<tr>
+ <td>Fortnite</td><td>Екшн</td><td>ПК, консолі</td>
+ <td><a href="https://www.fortnite.com/" target="_blank">Скачати</a></td>
+</tr>
+<tr>
+ <td>0 A.D.</td><td>Стратегія</td><td>ПК</td>
+ <td><a href="https://play0ad.com/" target="_blank">Скачати</a></td>
+</tr>
+</table>
+<hr>
+
+<p class="footer">Сайт створив Михайло, 8-В клас. 2026 рік.</p>
+
+<script>
+function filterTable() {
+  var v = document.getElementById("filter").value;
+  var rows = document.getElementById("games").rows;
+  for (var i = 1; i < rows.length; i++) {
+    var genre = rows[i].cells[1].innerText;
+    rows[i].style.display = (v === "all" || genre === v) ? "" : "none";
+  }
+}
+</script>
+
+</body>
+</html>
